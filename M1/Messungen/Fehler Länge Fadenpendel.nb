@@ -1,0 +1,127 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2973,        117]
+NotebookOptionsPosition[      2447,         93]
+NotebookOutlinePosition[      2790,        108]
+CellTagsIndexPosition[      2747,        105]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lg", "[", 
+   RowBox[{"lk_", ",", "rk_"}], "]"}], "=", 
+  RowBox[{"Sqrt", "[", 
+   RowBox[{"lk", "+", 
+    RowBox[{"rk", "/", "2"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6240976992942195`*^9, 3.6240977450334997`*^9}}],
+
+Cell[BoxData[
+ SqrtBox[
+  RowBox[{"lk", "+", 
+   FractionBox["rk", "2"]}]]], "Output",
+ CellChangeTimes->{3.624097755501118*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fehlerlg", "[", 
+   RowBox[{"lk_", ",", "rk_", ",", "flk_", ",", "frk_"}], "]"}], "=", 
+  RowBox[{"Sqrt", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", "lk"], 
+        RowBox[{"lg", "[", 
+         RowBox[{"lk", ",", "rk"}], "]"}]}], "*", "flk"}], ")"}], "^", "2"}], 
+    "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", "rk"], 
+        RowBox[{"lg", "[", 
+         RowBox[{"lk", ",", "rk"}], "]"}]}], "*", "frk"}], ")"}], "^", 
+     "2"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.624097771896747*^9, 3.624097897164967*^9}}],
+
+Cell[BoxData[
+ SqrtBox[
+  RowBox[{
+   FractionBox[
+    SuperscriptBox["flk", "2"], 
+    RowBox[{"4", " ", 
+     RowBox[{"(", 
+      RowBox[{"lk", "+", 
+       FractionBox["rk", "2"]}], ")"}]}]], "+", 
+   FractionBox[
+    SuperscriptBox["frk", "2"], 
+    RowBox[{"16", " ", 
+     RowBox[{"(", 
+      RowBox[{"lk", "+", 
+       FractionBox["rk", "2"]}], ")"}]}]]}]]], "Output",
+ CellChangeTimes->{3.6240979009401736`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fehlerlg", "[", 
+  RowBox[{"51.0", ",", "3.0", ",", "0.5", ",", "0.005"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6240979098165894`*^9, 3.6240979766481066`*^9}}],
+
+Cell[BoxData["0.03450370925539677`"], "Output",
+ CellChangeTimes->{3.6240979788321104`*^9}]
+}, Open  ]]
+},
+WindowSize->{1350, 643},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 258, 7, 31, "Input"],
+Cell[840, 31, 128, 4, 56, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1005, 40, 688, 22, 31, "Input"],
+Cell[1696, 64, 419, 15, 69, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2152, 84, 185, 3, 31, "Input"],
+Cell[2340, 89, 91, 1, 63, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

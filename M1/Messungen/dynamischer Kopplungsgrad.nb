@@ -1,0 +1,219 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5709,        209]
+NotebookOptionsPosition[      4853,        173]
+NotebookOutlinePosition[      5197,        188]
+CellTagsIndexPosition[      5154,        185]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"k", "[", 
+   RowBox[{"tgl_", ",", "tgeg_"}], "]"}], "=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"tgl", "^", "2"}], "-", 
+     RowBox[{"tgeg", "^", "2"}]}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"tgl", "^", "2"}], "+", 
+     RowBox[{"tgeg", "^", "2"}]}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.6243554611148086`*^9, 3.6243554918780622`*^9}, {
+  3.6243555248565207`*^9, 3.6243555516417675`*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"-", 
+    SuperscriptBox["tgeg", "2"]}], "+", 
+   SuperscriptBox["tgl", "2"]}], 
+  RowBox[{
+   SuperscriptBox["tgeg", "2"], "+", 
+   SuperscriptBox["tgl", "2"]}]]], "Output",
+ CellChangeTimes->{3.624355557507378*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"k", "[", 
+  RowBox[{"2.439", ",", "1.960"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6243555681153965`*^9, 3.624355607615494*^9}}],
+
+Cell[BoxData["0.21522491448441788`"], "Output",
+ CellChangeTimes->{3.6243556084578953`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"k", "[", 
+  RowBox[{"2.326", ",", "1.695"}], "]"}]], "Input",
+ CellChangeTimes->{{3.624355642512755*^9, 3.6243556550551767`*^9}}],
+
+Cell[BoxData["0.3063091634603161`"], "Output",
+ CellChangeTimes->{3.6243556558663783`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fk", "[", 
+   RowBox[{"tgl_", ",", "tgeg_", ",", "ftgl_", ",", "ftgeg_"}], "]"}], "=", 
+  RowBox[{"Sqrt", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", "tgl"], 
+        RowBox[{"k", "[", 
+         RowBox[{"tgl", ",", "tgeg"}], "]"}]}], "*", "ftgl"}], ")"}], "^", 
+     "2"}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", "tgeg"], 
+        RowBox[{"k", "[", 
+         RowBox[{"tgl", ",", "tgeg"}], "]"}]}], "*", "ftgeg"}], ")"}], "^", 
+     "2"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6243556769576154`*^9, 3.6243557727630396`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[Sqrt]", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["ftgeg", "2"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", "tgeg", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["tgeg", "2"]}], "+", 
+             SuperscriptBox["tgl", "2"]}], ")"}]}], 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["tgeg", "2"], "+", 
+             SuperscriptBox["tgl", "2"]}], ")"}], "2"]]}], "-", 
+        FractionBox[
+         RowBox[{"2", " ", "tgeg"}], 
+         RowBox[{
+          SuperscriptBox["tgeg", "2"], "+", 
+          SuperscriptBox["tgl", "2"]}]]}], ")"}], "2"]}], "+", 
+    RowBox[{
+     SuperscriptBox["ftgl", "2"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", "tgl", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["tgeg", "2"]}], "+", 
+             SuperscriptBox["tgl", "2"]}], ")"}]}], 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["tgeg", "2"], "+", 
+             SuperscriptBox["tgl", "2"]}], ")"}], "2"]]}], "+", 
+        FractionBox[
+         RowBox[{"2", " ", "tgl"}], 
+         RowBox[{
+          SuperscriptBox["tgeg", "2"], "+", 
+          SuperscriptBox["tgl", "2"]}]]}], ")"}], "2"]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.624355775399444*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fk", "[", 
+  RowBox[{"2.439", ",", "1.960", ",", "0.001", ",", "0.001"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6243558013890896`*^9, 3.6243558297343397`*^9}}],
+
+Cell[BoxData["0.0006242125065306966`"], "Output",
+ CellChangeTimes->{3.6243558308887415`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fk", "[", 
+  RowBox[{"2.326", ",", "1.695", ",", "0.001", ",", "0.001"}], "]"}]], "Input",
+ CellChangeTimes->{3.6243563373622513`*^9}],
+
+Cell[BoxData["0.0006615066883321952`"], "Output",
+ CellChangeTimes->{3.624356345396265*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 515},
+WindowMargins->{{80, Automatic}, {Automatic, 25}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 466, 14, 31, "Input"],
+Cell[1048, 38, 266, 9, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1351, 52, 153, 3, 31, "Input"],
+Cell[1507, 57, 91, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1635, 63, 153, 3, 31, "Input"],
+Cell[1791, 68, 90, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1918, 74, 703, 22, 52, "Input"],
+Cell[2624, 98, 1607, 50, 114, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4268, 153, 184, 3, 31, "Input"],
+Cell[4455, 158, 93, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4585, 164, 158, 3, 31, "Input"],
+Cell[4746, 169, 91, 1, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

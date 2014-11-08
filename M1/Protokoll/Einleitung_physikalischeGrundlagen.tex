@@ -1,0 +1,124 @@
+\section{Einleitung}
+
+\subsection{Ziel des Versuchs}
+Im Versuch M1 sollte das Verhalten verschiedener Pendel betrachtet werden.
+\subsection[Physikalische Grundlagen]{Physikalische Grundlagen\footnote{Grundlagen basierend auf \cite{giancoli2010physik,tipler2008physics,anleitung-ws2014}}}
+
+\subsubsection{Federpendel}
+
+Am Federpendel gilt das Hooksches Gesetz $ F=-Dx $. Zusammen mit dem 2. Newton'schen Axiom ergibt sich als Bewegungsgleichung:
+
+\begin{equation}
+\label{eq1.1}
+\ddot{x}+\frac{D}{m}x=0
+\end{equation}
+
+Die Lösung dieser Differentialgleichung lautet:
+
+\begin{equation}
+\label{eq1.2}
+x(t)=Ae^{i\omega t}+Be^{-i\omega t}
+\end{equation} 
+
+mit $ \omega=\sqrt{\frac{D}{m}} $
+
+\subsubsection{Fadenpendel}
+ 
+ Beim Fadenpendel wirkt als Rückstellkraft $ F_{\varphi}=-mg\sin\varphi $
+ 
+ Somit ist die Bewegungsgleichung mit dem zweiten Newtonschen Axiom:
+ 
+ \begin{equation}
+ \label{eq1.3}
+ \ddot\varphi+\frac{g}{l} \sin\varphi =0
+ \end{equation}
+ Mithilfe der Kleinwinkelnäherung $\sin \varphi \approx \varphi$ vereinfacht sich diese Gleichung zu: \begin{equation}
+ 	 \label{eq1.3.1}
+ 	 \ddot\varphi+\frac{g}{l} \varphi =0
+ \end{equation}
+ mit der Lösung:
+ 
+ \begin{equation}
+ \label{eq1.4}
+ \ddot{\varphi}(t)=Ae^{i\omega t}+Be^{-i\omega t}
+ \end{equation}
+ 
+ wobei $ \omega=\sqrt{\frac{g}{l}} $
+ 
+ \subsubsection{gekoppelte Pendel}
+ 
+ Bei gekoppelten Pendeln gibt es zwei Grundmoden:
+ Wenn beide Pendel mit der gleichen Phase und Auslenkung schwingen gilt $ \omega_0=\omega_{gl} $.
+ Wenn beide Pendel mit derselben Auslenkung und entgegengesetzter Phase schwingen gilt: $ \omega_{geg}=\sqrt{1+2D_F/D_0} $ mit $ D_0=\frac{mg}{l} $ und $D_F=D_F`\frac{l}{L}$, wobei $ D_F` $ die Federkonstante der Kopplungsfeder ist, $L$ die Gesamtlänge des Pendels und $l$ die Länge des Pendels bis zur Aufhängung der Feder.
+
+Die Bewegungsgleichungen im Allgemeinen lauten:
+
+\begin{align}
+m\ddot x_1&=-D_0x_1-D_F(x_1-x_2)\\
+m\ddot x_2&=-D_0x_2-D_F(x_1-x_2)
+\end{align}
+
+und werden durch folgende Gleichungen gelöst:
+
+\begin{align}
+x_1&=x_0\cos\left[(\frac{1}{2}\omega_{geg}-\omega_{gl} t)\right] \cdot \sin\left[ (\frac{1}{2}\omega_{geg}+\omega_{gl} t)\right] \\
+x_2&=x_0sin\left[ (\frac{1}{2}\omega_{geg}-\omega_{gl} t)\right]  \cdot\sin\left[ (\frac{1}{2}\omega_{geg}+\omega_{gl} t)\right] 
+\end{align}
+ 
+Für die Periodendauer ergibt sich $ T=\frac{4\pi}{\omega_{geg}+\omega_{gl}t} $ und für die Schwebungsdauer: \\ $ T=\frac{4\pi}{\omega_{geg}-\omega_{gl}t} $
+
+Darüber hinaus gibt es einen Kopplungsgrad, definiert durch \begin{equation}
+\label{eq1.10}
+k:=\frac{x_1}{x_2}
+\end{equation} 
+
+Er kann auf zwei verschiedene Arten bestimmt werden. Aus Betrachtung der Bewegungsgleichung im statischen Fall ergibt sich:
+
+\begin{equation}
+\label{eq1.11}
+k=\frac{D_F}{D_0+D_F}
+\end{equation}
+
+Über die Grundfrequenzen $ \omega_{geg} $ und $ \omega_{gl} $
+
+ergibt sich:
+
+\begin{equation}
+\label{eq1.12}
+k=\frac{ \omega_{geg}^2-\omega_{gl}^2}{ \omega_{geg}^2+\omega_{gl}^2}
+\end{equation}
+
+Nach Umformung erhält man für den Quotienten aus den beiden Kreisfrequenzen:
+
+\begin{equation}
+\label{eq1.13}
+\frac{\omega_{geg}}{\omega_{gl}}= \sqrt{\frac{1+k}{1-k}}
+\end{equation}
+
+und daraus für die Frequenzaufspaltung
+
+\begin{equation}
+\label{eq1.14}
+\frac{\Delta\omega}{\omega_0}=\sqrt{\frac{1+k}{1-k}}-1
+\end{equation}
+
+Durch Taylorentwicklung erhalten wir als Näherung:
+
+\begin{equation}
+\label{eq1.15}
+\frac{\Delta\omega}{\omega_0}=k+\frac{1}{2}k^2+\frac{1}{2}k^3
+\end{equation}
+
+%Ich würde vielleicht noch etwas zu Schwebungen schreiben, darum gings ja schließlich auch recht viel
+
+\subsection{Stand der Literatur}
+
+Die Normalfallbeschleunigung wurde bei  $ g_n= \SI{9,806}{m/s^2}$ festgelegt. Dieser Wert ist nicht überall gültig, da die Erde keine perfekte Kugel ist. In Anbetracht unserer Messungenauigkeiten ist er trotzdem mehr als ausreichend .
+\subsection{Mess- und Auswertemethoden}
+\subsubsection{Federpendel}
+Die Position der Waagschale und dadurch die Auslenkung der Feder wurde durch Ablesen einer an der Wand angebrachten Skala mit 2 mm Genauigkeit durchgeführt. Die Genauigkeit aller Messungen der Auslenkung wurde mithilfe eines hinter die Waagschale gehaltenen Spiegels erhöht wodurch ein senkrechtes Ablesen gesichert wurde. Durch lang anhaltende kleine Oszillationen der Waagschale wurde die Messgenauigkeit dennoch beeinflusst, was den Fehler um schätzungsweise weitere 2 mm erhöhte. Die Massen der verwendeten Gewichte wurden von uns mit der digitalen Waage überprüft.
+\subsubsection{Fadenpendel}
+Der Radius der Kugel wurde über Messung des Durchmessers mit einer Schieblehre bestimmt. Die Länge der Pendelschnur wurde durch Anhalten eines Maßbandes abgelesen.
+\subsubsection{gekoppeltes Pendel}
+\label{messgekop zweiter änderung}
+Die statische Auslenkung der beiden Pendel wurde über ein in Höhe der Pendelspitzen aufgestelltes Lineal abgelesen. Die Bestimmung der Auslenkung während der Schwingungen wurde hingegen über einen Ultraschall-Entfernungssensor vorgenommen, welcher an ein Laptop angeschlossen war. Auf diesem wurden die Messwerte in Echtzeit grafisch dargestellt. Gemessen wurde dabei der Abstand des rechten Pendels zum Entfernungssensor. Im Messprogramm war es möglich, für jede Messreihe über eine Fouriertransformation  die Frequenz der Schwingung berechnen zu lassen. Der Umgang mit dem Programm und dem Sensor gestaltete sich allerdings schwierig, da sich Einstellungen oft verstellten, das Programm abstürzte und andere unerklärliche Fehler auftraten.
