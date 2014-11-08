@@ -1,6 +1,23 @@
 \section{Anhang}
 \label{anhang}
 \subsection{Fehlerrechnungen}
-$\Delta k=\sqrt{(-\frac{x_2}{x_1^2}\Delta x_1)^2+(\frac{\Delta x_2}{x_1})^2}$
 \subsubsection{Federpendel}
-$\sqrt{\frac{100000000 \pi ^4 \text{fm}^2}{t^4}+\frac{400000000 \pi ^4 \text{ft}^2 (m+36.4667)^2}{t^6}}$
+\textbf{statische Bestimmung der Federkonstante}:\\
+$\Delta D=\sqrt{\frac{\Delta m^2 g^2}{(x_0-x)^2}+\frac{\Delta x^2 g^2 m^2}{(x_0-x)^4}}$\\
+\textbf{dynamische Bestimmung der Federkonstante}:\\
+$\Delta D=\sqrt{\frac{100000000 \pi ^4 \Delta m^2}{t_{50}^4}+\frac{400000000 \pi ^4 \Delta t_{50}^2 (m+36.4667)^2}{t_{50}^6}}$\\
+\subsubsection{Fadenpendel}
+\textbf{Länge des Fadenpendels}:\\
+$\Delta l= \sqrt{\frac{\Delta l_{PS}^2}{4 \left(l_{PS}+\frac{r_K}{2}\right)}+\frac{\Delta r_K^2}{16 \left(l_{PS}+\frac{r_K}{2}\right)}}$
+\subsubsection{gekoppeltes Pendel}
+\textbf{statische Bestimmung des Kopplungsgrads}:\\
+$\Delta k=\sqrt{(-\frac{x_2}{x_1^2}\Delta x_1)^2+(\frac{\Delta x_2}{x_1})^2}$\\
+\textbf{dynamische Bestimmung des Kopplungsgrads}:\\
+$\Delta k=$$\sqrt{\Delta T_{geg}^2 \left(-\frac{2 T_{geg}}{T_{geg}^2+T_{gl}^2}-\frac{2 T_{geg} \left(T_{gl}^2-T_{geg}^2\right)}{\left(T_{geg}^2+T_{gl}^2\right)^2}\right)^2+\Delta T_{gl}^2 \left(\frac{2 T_{gl}}{T_{geg}^2+T_{gl}^2}-\frac{2 T_{gl} \left(T_{gl}^2-T_{geg}^2\right)}{\left(T_{geg}^2+T_{gl}^2\right)^2}\right)^2}$\\
+\textbf{relative Frequenzaufspaltung}\\
+
+\cref{eq1.13}: $\Delta \frac{\Delta \omega}{\omega_0}=\frac{\Delta k \left(\frac{k+1}{(1-k)^2}+\frac{1}{1-k}\right)}{2 \sqrt{\frac{k+1}{1-k}}}$
+
+\cref{eq1.14}: $\Delta \frac{\Delta \omega}{\omega_0}=\Delta k \left(\frac{3 k^2}{2}+k+1\right)$\\
+
+
